@@ -1,0 +1,14 @@
+[import](common.lg)
+
+# SendActivity_J4VYXo()
+[Activity
+    Text = 😁Empecemos a explorar la cultura FLAR.
+]
+
+# TextInput_Prompt_MeYIMa()
+[Activity
+    Text = Preguntamé... 🦾
+]
+
+# QnAMakerDialog_NoAnswer_TqkATC()
+-[C] Disculpame 😥, no encontre una respuesta a tu pregunta.

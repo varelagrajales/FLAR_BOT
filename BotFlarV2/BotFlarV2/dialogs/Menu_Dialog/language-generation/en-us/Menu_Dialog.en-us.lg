@@ -1,0 +1,48 @@
+[import](common.lg)
+
+# SendActivity_2RU8Au()
+[Activity
+    Attachments = ${json(SendActivity_2RU8Au_attachment_OKAyDn())} | ${json(SendActivity_2RU8Au_attachment_o3z5Qz())}
+    AttachmentLayout = carousel
+]
+
+# SendActivity_2RU8Au_attachment_OKAyDn()
+[ThumbnailCard
+  title = ${HC1_Title()}
+  text= ${HC1_Subtitle()}
+  images = ${HC1_Image()}
+  buttons = ${HC1_Button()}
+]
+# SendActivity_7GMZKq()
+[Activity
+    Text = 🔍Te puedo ayudar con las siguientes funcionalidades, selecciona alguna 🤔:
+]
+
+# HC1_Title()
+-📚 Historia y Cultura del FLAR
+# HC1_Subtitle()
+- Te puedo responder preguntas relacionadas con la historia y cultura del FLAR. \n\n- ¿Cuales son los paises Miembros del FLAR?  \n- ¿Cuales son los valores del FLAR?  \n\n- Entre otras preguntas....
+# HC1_Image()
+- https://estaticos.muyhistoria.es/uploads/images/gallery/5ad871a95bafe8bd653c986a/SLIDE.jpg
+# HC1_Button()
+[CardAction 
+    title = Iniciar
+    value = Historia
+]
+# SendActivity_2RU8Au_attachment_o3z5Qz()
+[ThumbnailCard
+  title = ${HC2_Title()}
+  text= ${HC2_Text()}
+  images = ${HC2_Image()}
+  buttons = ${HC2_Button()}
+]
+# HC2_Title()
+-📣 Recursos Humanos
+# HC2_Text()
+- Respuestas acerca de los procesos de Recursos Humanos. \n\n Ejemplos: \n\n- ¿Como puedo solicitar las vacaciones?  \n- ¿Qué es la Matriz de Capacitaciones?  \n\n- ¿Como solicito una Capacitación?
+# HC2_Image()
+- https://www.icebergci.com/wp-content/uploads/2015/08/como-elegir-tono-adecuado-comunicacion.jpg
+# HC2_Button()
+[CardAction 
+    title = Próximamente
+]

@@ -1,0 +1,21 @@
+[import](common.lg)
+
+# TextInput_Prompt_ex9Um9()
+[Activity
+    Text = ${expandText(@answer)}
+    SuggestedActions = ${foreach(turn.recognized.answers[0].context.prompts, x, x.displayText)}
+]
+
+# SendActivity_I3TrzH()
+- ${expandText(@answer)}
+
+# QnAMakerDialog_NoAnswer_Z04I0W()
+-[A] Disculpame 😥, no encontre una respuesta a tu pregunta.
+# SendActivity_79gJFR()
+[Activity
+    Text = ${SendActivity_79gJFR_text()}
+]
+
+# SendActivity_79gJFR_text()
+- 🤓🤓 Pregúntame lo que quieras saber relacionado a la historia del FLAR y su cultura organizacional 📚.....
+- ¿Qué quieres saber? 🤔, pregúntame algo relacionado historia del FLAR y su cultura organizacional 🔍🗃

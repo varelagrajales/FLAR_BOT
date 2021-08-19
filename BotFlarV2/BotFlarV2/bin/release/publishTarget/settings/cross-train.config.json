@@ -1,0 +1,26 @@
+{
+  "BotFlarV2.en-us": {
+    "rootDialog": true,
+    "triggers": {
+      "": [
+        "Menu_Dialog.en-us"
+      ],
+      "Menu": [
+        "Menu_Dialog.en-us"
+      ],
+      "Historia": [
+        "Historia_FLAR.en-us"
+      ],
+      "Cultura": [
+        "Cultura_FLAR.en-us"
+      ],
+      "FAQSGENERAL": [
+        "Qna_FLAR.en-us"
+      ],
+      "Despedida": "",
+      "Saludo_LUIS": [
+        "Menu_Dialog.en-us"
+      ]
+    }
+  }
+}

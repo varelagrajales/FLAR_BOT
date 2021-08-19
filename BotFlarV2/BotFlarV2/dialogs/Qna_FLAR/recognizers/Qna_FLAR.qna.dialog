@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.MultiLanguageRecognizer",
+  "id": "QnA_Qna_FLAR",
+  "recognizers": {
+    "en-us": "Qna_FLAR.en-us.qna",
+    "": "Qna_FLAR.en-us.qna"
+  }
+}

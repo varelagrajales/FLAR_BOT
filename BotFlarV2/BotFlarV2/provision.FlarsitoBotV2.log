@@ -1,0 +1,24 @@
+{
+  "profileName": "FlarsitoBotV2",
+  "jobId": "2907b6a6-3469-4051-8343-a82ddbff2edb",
+  "projectId": "30163.687988476395",
+  "time": "2021-07-13T07:33:09.305Z",
+  "log": [
+    "Creating Azure resources...",
+    "Checking the Existence of the Resource Group ...",
+    "Creating Resource Group ...",
+    "> Creating App Registration ...",
+    "Start to add password for App, Id : 65cef4f4-fd0a-4125-adbb-daa4b3accffb",
+    "> Create App Registration Success! ID: 65cef4f4-fd0a-4125-adbb-daa4b3accffb",
+    "Deploying Web App Resource ...",
+    "Deploying Bot Resource ...",
+    "Deploying Application Insights Resource ...",
+    "> Linking Application Insights settings to Bot Service ...",
+    "> AppInsights AppId: 4c968812-f4a1-4b9a-b232-fdce07c79bd3 ...",
+    "> AppInsights InstrumentationKey: f71744e6-9243-4795-97b3-a403d3c4cb2e ...",
+    "> AppInsights ApiKey: i2d7ec800gro1l13ipw00kb30lu4x62eqfmd8uq6 ...",
+    "> Linking Application Insights settings to Bot Service Success!",
+    "Deploying Blob Storage Resource ...",
+    "Provisioning completed successfully!"
+  ]
+}

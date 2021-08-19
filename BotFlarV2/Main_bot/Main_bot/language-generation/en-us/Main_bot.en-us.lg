@@ -1,0 +1,11 @@
+[import](common.lg)
+
+# SendActivity_Greeting()
+[Activity
+    Text = Hola, me llamo Elisa, soy tu bot.
+]
+
+# SendActivity_DidNotUnderstand()
+[Activity
+    Text = Lo siento, no entiendo lo que me dices 🤔
+]

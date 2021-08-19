@@ -1,0 +1,12 @@
+[import](common.lg)
+
+# SendActivity_RNpLQ6()
+[Activity
+    Text = ${SendActivity_RNpLQ6_text()}
+]
+
+# SendActivity_RNpLQ6_text()
+- ```Menú del día
+ \- Pizza
+ \- Hamburguesa y papas
+ \- Sandwich de pollo```

@@ -1,0 +1,20 @@
+{
+  "profileName": "orgbotflar2",
+  "jobId": "973d75d5-80f3-470b-b393-a180d0b61de5",
+  "projectId": "30163.687988476395",
+  "time": "2021-07-21T06:54:20.179Z",
+  "log": [
+    "Creating Azure resources...",
+    "Checking the Existence of the Resource Group ...",
+    "Creating Resource Group ...",
+    "> Creating App Registration ...",
+    "Start to add password for App, Id : 81651b83-1e4f-4291-8932-c3a5bc71aa58",
+    "> Create App Registration Success! ID: 81651b83-1e4f-4291-8932-c3a5bc71aa58",
+    "Deploying Web App Resource ...",
+    "Deploying Bot Resource ...",
+    "Deploying Blob Storage Resource ...",
+    "Deploying Luis Authoring Resource ...",
+    "Deploying Luis Resource ...",
+    "Provisioning completed successfully!"
+  ]
+}

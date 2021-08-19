@@ -1,0 +1,14 @@
+[import](common.lg)
+
+# SendActivity_m8oZW1()
+[Activity
+    Text = 😁 Que bien que quieras conocer acerca del FLAR. Preguntamé... 🦾
+]
+
+# TextInput_Prompt_EpUBip()
+[Activity
+    Text = ¿Qué quieres saber?
+]
+
+# QnAMakerDialog_NoAnswer_e6wBZa()
+-[H] Disculpame 😥, no encontre una respuesta a tu pregunta.

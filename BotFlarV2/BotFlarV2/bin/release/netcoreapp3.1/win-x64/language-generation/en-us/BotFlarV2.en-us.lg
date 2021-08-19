@@ -1,0 +1,30 @@
+[import](common.lg)
+
+# SendActivity_Greeting()
+[Activity
+    Text = ${SendActivity_Greeting_text()}
+]
+
+# SendActivity_DidNotUnderstand()
+[Activity
+    Text = Disculpa 😥, no entiendo lo que necesitas. \n\nRecuerda que sigo aprendiendo. Escribe "Menu" y te mostraré en lo que si puedo ayudarte. 👍
+]
+# SendActivity_Greeting_text()
+- Hola [Nombre] soy Flarsito🤖😄!, el nuevo asistente virtual del Fondo Latinoamericano de Reservas. \n\nEstoy en versión de PRUEBA, mi lenguaje es aún corto, si alguna pregunta no puedo responder hazmelo saber con una SUGERENCIA. Empecemos 🦾
+- Hola [Nombre] soy Flarsito 🤖😄, el nuevo asistente del Fondo Latinoamericano de Reservas. Es un gusto ayudarte!
+# SendActivity_pmJL83()
+[Activity
+    Text = ${SendActivity_pmJL83_text()}
+]
+
+# SendActivity_pmJL83_text()
+- Nos vemos pronto😎, adios! 👋👋
+- 👋👋 Adios!, Ha sido un gusto ayudarte. 😀
+# SendActivity_jr8OSX()
+[Activity
+    Text = ${SendActivity_jr8OSX_text()}
+]
+
+# SendActivity_jr8OSX_text()
+- Hola [Nombre] soy Flarsito🤖😄!, el nuevo asistente virtual del Fondo Latinoamericano de Reservas. \n\nEstoy en versión de PRUEBA, mi lenguaje es aún corto, si alguna pregunta no puedo responder hazmelo saber con una SUGERENCIA. Empecemos 🦾
+- Hola [Nombre] soy Flarsito 🤖😄, el nuevo asistente del Fondo Latinoamericano de Reservas. Es un gusto ayudarte!

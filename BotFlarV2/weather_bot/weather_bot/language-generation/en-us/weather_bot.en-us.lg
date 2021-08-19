@@ -1,0 +1,11 @@
+[import](common.lg)
+
+# SendActivity_Greeting()
+[Activity
+    Text = Bienvenido a tu bot del "Clima".
+]
+
+# SendActivity_DidNotUnderstand()
+[Activity
+    Text = Lo siento, no entiendo lo que dices.
+]

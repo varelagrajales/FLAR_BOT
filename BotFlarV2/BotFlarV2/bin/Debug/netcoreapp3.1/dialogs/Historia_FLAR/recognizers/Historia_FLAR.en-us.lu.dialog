@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.LuisRecognizer",
+  "id": "LUIS_Historia_FLAR",
+  "applicationId": "=settings.luis.Historia_FLAR_en_us_lu.appId",
+  "version": "=settings.luis.Historia_FLAR_en_us_lu.version",
+  "endpoint": "=settings.luis.endpoint",
+  "endpointKey": "=settings.luis.endpointKey"
+}

@@ -1,0 +1,17 @@
+[import](common.lg)
+
+# SendActivity_EvtsIY()
+[Activity
+    Text = Vamos a ver el clima.
+]
+
+
+# TextInput_UnrecognizedPrompt_2Lmhuj()
+[Activity
+    Text = Lo siento, no entendí '${this.value}' . Por favor ingresa un código numérico de 6 dígitos.
+]
+
+# TextInput_InvalidPrompt_2Lmhuj()
+[Activity
+    Text = length(this.value) == 6
+]

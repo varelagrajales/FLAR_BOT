@@ -1,0 +1,45 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "gnLqCX",
+    "name": "Menu_Dialog",
+    "description": "Mostrar menu de funcionalidades del bot"
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "u1bX5V"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "7GMZKq"
+          },
+          "activity": "${SendActivity_7GMZKq()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "2RU8Au"
+          },
+          "activity": "${SendActivity_2RU8Au()}"
+        },
+        {
+          "$kind": "Microsoft.EndDialog",
+          "$designer": {
+            "id": "vjG1Gt"
+          }
+        }
+      ]
+    }
+  ],
+  "generator": "Menu_Dialog.lg",
+  "recognizer": "Menu_Dialog.lu.qna",
+  "id": "Menu_Dialog"
+}

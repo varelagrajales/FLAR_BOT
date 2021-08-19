@@ -1,0 +1,257 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "name": "BotFlarV2",
+    "description": "",
+    "id": "A79tBe"
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnConversationUpdateActivity",
+      "$designer": {
+        "id": "376720"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.Foreach",
+          "$designer": {
+            "id": "518944",
+            "name": "Loop: for each item"
+          },
+          "itemsProperty": "turn.Activity.membersAdded",
+          "actions": [
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "641773",
+                "name": "Branch: if/else"
+              },
+              "condition": "string(dialog.foreach.value.id) != string(turn.Activity.Recipient.id)",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "859266",
+                    "name": "Send a response"
+                  },
+                  "activity": "${SendActivity_Greeting()}"
+                },
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "5c6Z45"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "Menu_Dialog"
+                }
+              ]
+            }
+          ],
+          "value": "dialog.foreach.value"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnUnknownIntent",
+      "$designer": {
+        "id": "mb2n1u"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "kMjqz1"
+          },
+          "activity": "${SendActivity_DidNotUnderstand()}"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "njuTWG",
+        "name": "Menu"
+      },
+      "intent": "Menu",
+      "actions": [
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "t6xgL9"
+          },
+          "actions": [
+            {
+              "$kind": "Microsoft.BeginDialog",
+              "$designer": {
+                "id": "oSEraz"
+              },
+              "activityProcessed": true,
+              "dialog": "Menu_Dialog"
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.EmitEvent",
+              "$designer": {
+                "id": "GmKrAZ"
+              },
+              "handledProperty": "turn.eventHandled",
+              "eventName": "recognizedIntent",
+              "eventValue": "None"
+            },
+            {
+              "$kind": "Microsoft.EndTurn",
+              "$designer": {
+                "id": "AMnvTX"
+              }
+            }
+          ],
+          "condition": "=turn.recognized.score > 0.8"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "Rs7cYA",
+        "name": "Historia"
+      },
+      "intent": "Historia",
+      "actions": [
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "39gcvy"
+          },
+          "condition": "=turn.recognized.score > 1.1",
+          "actions": [
+            {
+              "$kind": "Microsoft.BeginDialog",
+              "$designer": {
+                "id": "O80QMQ"
+              },
+              "activityProcessed": true,
+              "dialog": "Historia_FLAR"
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.EndTurn",
+              "$designer": {
+                "id": "x3G62H"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "Wqhn4s",
+        "name": "Cultura"
+      },
+      "intent": "Cultura",
+      "actions": [
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "IMNetU"
+          },
+          "condition": "=turn.recognized.score > 1.1",
+          "actions": [
+            {
+              "$kind": "Microsoft.BeginDialog",
+              "$designer": {
+                "id": "UvoQEU"
+              },
+              "activityProcessed": true,
+              "dialog": "Cultura_FLAR"
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.EndTurn",
+              "$designer": {
+                "id": "bOQgTo"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "ZmKOwY",
+        "name": "FAQSGENERAL"
+      },
+      "intent": "FAQSGENERAL",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "4eIDGe"
+          },
+          "activityProcessed": true,
+          "dialog": "Qna_FLAR"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "JJQP3o",
+        "name": "Despedida"
+      },
+      "intent": "Despedida",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "pmJL83"
+          },
+          "activity": "${SendActivity_pmJL83()}"
+        },
+        {
+          "$kind": "Microsoft.CancelAllDialogs",
+          "$designer": {
+            "id": "YtyT2Q"
+          },
+          "activityProcessed": true
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "9Kb5m8",
+        "name": "Saludo_LUIS"
+      },
+      "intent": "Saludo_LUIS",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "jr8OSX"
+          },
+          "activity": "${SendActivity_jr8OSX()}"
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "LLsz6g"
+          },
+          "activityProcessed": true,
+          "dialog": "Menu_Dialog"
+        }
+      ]
+    }
+  ],
+  "generator": "BotFlarV2.lg",
+  "id": "BotFlarV2",
+  "recognizer": "BotFlarV2.lu.qna"
+}

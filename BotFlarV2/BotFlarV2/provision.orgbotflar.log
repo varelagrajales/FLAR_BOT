@@ -1,0 +1,27 @@
+{
+  "profileName": "orgbotflar",
+  "jobId": "02eacd7e-5dea-410c-bd04-472133a36d6e",
+  "projectId": "30163.687988476395",
+  "time": "2021-07-16T22:00:45.451Z",
+  "log": [
+    "Creating Azure resources...",
+    "Checking the Existence of the Resource Group ...",
+    "Creating Resource Group ...",
+    "> Creating App Registration ...",
+    "Start to add password for App, Id : 61344816-29d3-4edb-b43a-db9dbad0c548",
+    "> Create App Registration Success! ID: 61344816-29d3-4edb-b43a-db9dbad0c548",
+    "Deploying Web App Resource ...",
+    "Deploying Bot Resource ...",
+    "Deploying Application Insights Resource ...",
+    "> Linking Application Insights settings to Bot Service ...",
+    "> AppInsights AppId: acf97893-eb23-4e19-897f-f04deae6d289 ...",
+    "> AppInsights InstrumentationKey: 7e9a7c41-5b5d-4234-a747-20aae5aadf3b ...",
+    "> AppInsights ApiKey: ai27bqibfqdwc0g4612xm6bkboci8ui4wglmw31i ...",
+    "> Linking Application Insights settings to Bot Service Success!",
+    "Deploying Blob Storage Resource ...",
+    "Deploying Luis Authoring Resource ...",
+    "Deploying Luis Resource ...",
+    "Deploying QnA Resource ...",
+    "Provisioning completed successfully!"
+  ]
+}
